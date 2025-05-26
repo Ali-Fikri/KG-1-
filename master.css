@@ -327,18 +327,18 @@ body {
 }
 
 .first-row {
-  display: flex;
-  gap: 2rem;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem;
 }
 
 .first-row img {
-  width: 5rem;
-  height: 5rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .second-row {
   font-family: customletter;
+  padding: 0.5rem 3rem;
+  width: 100%;
 }
 
 .second-row span {
@@ -346,12 +346,14 @@ body {
   text-shadow: 2px 2px 0px #ffffff;
 }
 
-.third-row {
-  padding: 0.5rem 1rem;
+.second-container .second-row {
+  width: 100%;
+  padding: 0.5rem 3rem;
   background-color: rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  gap: 1.5rem;
 }
 
 .first-char {
@@ -366,7 +368,7 @@ body {
   border: 0.25rem solid rgba(0, 175, 239, 1);
 }
 
-.first-container .third-row {
+.first-container .second-row {
   background-color: rgba(0, 175, 239, 0.2);
 }
 
@@ -374,7 +376,7 @@ body {
   border: 0.25rem solid rgba(209, 35, 41, 1);
 }
 
-.second-container .third-row {
+.second-container .second-row {
   background-color: rgba(209, 35, 41, 0.2);
 }
 
@@ -382,7 +384,7 @@ body {
   border: 0.25rem solid rgba(64, 174, 73, 1);
 }
 
-.third-container .third-row {
+.third-container .second-row {
   background-color: rgba(64, 174, 73, 0.2);
 }
 
@@ -498,6 +500,6 @@ body {
   }
 
   .words-bank {
-  min-height: 6rem;
-}
+    min-height: 6rem;
+  }
 }
