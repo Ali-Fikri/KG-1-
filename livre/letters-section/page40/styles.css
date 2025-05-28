@@ -1,0 +1,23 @@
+.letters-container {
+  padding: 4rem 6rem;
+  margin-bottom: 2.5rem;
+  border: 0.625rem solid #df5b2c;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.letter:hover {
+  background-color: #f9dc5c;
+  color: #000;
+  font-weight: bold;
+}
+
+.script-title,
+.cursive-title {
+  background: url("../../../../imgs/yellow-brush.png");
+  background-size: cover;
+  width: fit-content;
+  padding: 0 2rem;
+  background-repeat: no-repeat;
+  font-size: 3rem;
+}
