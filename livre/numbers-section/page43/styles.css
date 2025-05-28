@@ -1,0 +1,28 @@
+.inner-number-container {
+  padding: 4rem 6rem;
+  margin-bottom: 2.5rem;
+  border: 0.625rem solid #df5b2c;
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.number:hover {
+  transform: scale(1.1);
+}
+
+.script-title,
+.cursive-title {
+  background: url("../../../imgs/yellow-brush.png");
+  background-size: cover;
+  width: fit-content;
+  padding: 0 2rem;
+  background-repeat: no-repeat;
+  font-size: 3rem;
+}
