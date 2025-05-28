@@ -14,7 +14,7 @@
 
 .script-title,
 .cursive-title {
-  background: url("../../../../imgs/yellow-brush.png");
+  background: url("../../../imgs/yellow-brush.png");
   background-size: cover;
   width: fit-content;
   padding: 0 2rem;
