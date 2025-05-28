@@ -8,7 +8,7 @@
   padding: 2rem 4rem;
   margin-bottom: 2.5rem;
   border: 0.625rem solid #df5b2c;
-  background-color: white;
+  background: url("imgs/background.png") no-repeat center center/cover;
   border-radius: 2rem;
 }
 
