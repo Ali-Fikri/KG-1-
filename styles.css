@@ -338,7 +338,7 @@ audio {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
-  background: url(imgs/kids.png) no-repeat center center;
+  background: url(imgs/kids.png) no-repeat center center/ cover;
   background-size: contain;
   margin-top: 10rem;
 }
