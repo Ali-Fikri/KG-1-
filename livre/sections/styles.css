@@ -25,27 +25,41 @@ body {
   box-shadow: #f172ac 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+@media (max-width: 991px) {
+  .board {
+    width: 90%;
+  }
+}
+
 .title {
   color: red;
   font-size: 3rem;
   padding-top: 30px;
   text-shadow: 2px 2px white;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .book-sections {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 2rem;
   font-size: 1.5em; /* Now relative to .board */
-  text-align: center;
+  gap: 3rem 3rem;
 }
 
 .book-section {
+  padding: 1rem;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: transform 0.3s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .back-btn {
@@ -85,18 +99,6 @@ body {
   .title {
     font-size: 6rem;
     margin-bottom: 4rem;
-  }
-
-  .book-sections {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 2rem;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 4rem;
-  }
-
-  .book-section {
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
   }
 
   .back-btn {
