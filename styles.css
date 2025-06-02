@@ -183,54 +183,6 @@ audio {
   border-color: #e2302b;
 }
 
-/* 
-
-.home-button::after,
-.home-button::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -99999;
-  transition: all 0.4s;
-}
-
-.home-button::before {
-  transform: translate(0%, 0%);
-  width: 100%;
-  height: 100%;
-  background: #e2302b;
-  border-radius: 0.625rem;
-  box-shadow: 4px 7px 67px 24px rgba(17, 17, 26, 0.08);
-}
-
-/* .home-button::after {
-  transform: translate(0.625rem, 0.625rem);
-  width: 35px;
-  height: 35px;
-  background: #d6676715;
-  backdrop-filter: blur(5px);
-  border-radius: 50px;
-} 
-
-.home-button:hover::before {
-  transform: translate(5%, 20%);
-  width: 110%;
-  height: 110%;
-}
-
-.home-button:hover::after {
-  border-radius: 0.625rem;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
-}
-
-.home-button:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
-} */
-
 /* From Uiverse.io by marcelodolza */
 .button {
   --white: #000000;
