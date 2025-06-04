@@ -52,7 +52,7 @@ document.querySelectorAll(".img-item").forEach((img) => {
       line.setAttribute("x2", x2);
       line.setAttribute("y2", y2);
       line.setAttribute("stroke-width", 3);
-      line.setAttribute("stroke", "#007bff");
+      line.setAttribute("stroke", "#ec008d");
       line.setAttribute("class", "line-animation");
       svg.appendChild(line);
 

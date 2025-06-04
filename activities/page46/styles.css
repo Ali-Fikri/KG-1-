@@ -67,6 +67,7 @@
   height: 1rem;
   border-radius: 50%;
   display: inline-block;
+  z-index: 1000;
 }
 
 .dot.cyan {
