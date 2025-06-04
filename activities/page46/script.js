@@ -10,7 +10,6 @@ document.querySelectorAll(".letter").forEach((letter) => {
     letter.classList.add("selected-letter");
     selectedLetter = letter;
     selectedLetterDot = letter.children[1]; // Get the inner span element
-    console.log(selectedLetter);
   });
 });
 
