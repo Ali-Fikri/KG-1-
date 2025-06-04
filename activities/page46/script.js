@@ -22,6 +22,14 @@ function playClapSound() {
   }
 }
 
+function playIncorrectSound() {
+  const sound = document.getElementById("inCorrectSound");
+  if (sound) {
+    sound.currentTime = 0;
+    sound.play();
+  }
+}
+
 document.querySelectorAll(".img-item").forEach((img) => {
   img.addEventListener("click", () => {
     if (!selectedLetter) return;
@@ -41,7 +49,7 @@ document.querySelectorAll(".img-item").forEach((img) => {
     const matchCorrect = selectedLetter.dataset.match === img.dataset.id;
 
     if (matchCorrect) {
-      playClapSound(); // ✅ يشغل التصفيق فقط هنا
+      playClapSound();
 
       const line = document.createElementNS(
         "http://www.w3.org/2000/svg",
@@ -60,9 +68,8 @@ document.querySelectorAll(".img-item").forEach((img) => {
         // animate the line
         line.style.strokeDasharray = "0";
       }, 2000);
-      console.log(line.getTotalLength());
     } else {
-      // ❌ مفيش صوت هنا
+      playIncorrectSound();
       selectedLetter.classList.add("shake");
       img.classList.add("shake");
 
