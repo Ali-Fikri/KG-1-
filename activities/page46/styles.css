@@ -1,12 +1,16 @@
+.page {
+  min-width: 60% !important;
+}
+
 .board {
-  padding: 4rem 3rem;
+  width: 100%;
+  padding: 3rem;
   margin-bottom: 2.5rem;
   border: 0.625rem solid #df5b2c;
   background: url(../../imgs/board-layout.png) no-repeat center center;
   background-size: cover;
   background-color: white;
   border-radius: 2rem;
-  /* aspect-ratio: 3 / 4; */
   aspect-ratio: 5 / 4;
   max-width: 90%;
 }
@@ -17,10 +21,20 @@
   margin-top: 0;
 }
 
+@media (min-width: 1700px) {
+  .board .section img,
+  .board .section .img-item {
+    height: 150px;
+  }
+}
+ {
+}
+
 .section h2 {
   background: url(../../imgs/red-brush.png) no-repeat center center;
   background-size: contain;
   padding: 0rem 5rem;
+  font-size: 4rem;
   color: white;
 }
 
@@ -38,12 +52,11 @@
   flex-direction: column;
   gap: 0.5rem;
   justify-content: space-between;
-  height: 100% !important;
   cursor: pointer;
 }
 
 .letters-box .letters {
-  gap: 6rem;
+  gap: 1rem;
 }
 
 @media (max-width: 990px) {
@@ -60,6 +73,7 @@
 
 .letter img {
   max-width: 12rem;
+  min-width: 6rem;
 }
 
 .dot {
@@ -98,8 +112,8 @@
 }
 
 .img-item {
-  max-width: 11rem;
-  padding: 1rem;
+  max-width: 12rem;
+  padding: 0.3rem;
   cursor: pointer;
   border-radius: 6px;
 }
@@ -181,14 +195,11 @@ svg line {
 .line-animation {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: line-animation 5s linear alternate;
-  -webkit-animation: line-animation 5s linear alternate;
+  animation: draw 2s linear forwards;
+  -webkit-animation: draw 2s linear forwards;
 }
 
-@keyframes line-animation {
-  from {
-    stroke-dashoffset: 1000;
-  }
+@keyframes draw {
   to {
     stroke-dashoffset: 0;
   }

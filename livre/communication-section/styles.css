@@ -13,7 +13,7 @@
 .board {
   background-color: white;
   min-width: 90%;
-  padding: 4rem;
+  padding: 3rem;
   border: 0.625rem solid #df5b2c;
   border-radius: 2rem;
   box-shadow: #f172ac 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -33,19 +33,27 @@
 .board header {
   background: url(../../imgs/title-box.png) no-repeat center center;
   background-size: cover;
-  padding: 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+  margin-bottom: 4rem;
 }
 
 header h1,
 h2 {
   margin: 4px;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: #ec5339;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   -webkit-text-stroke: 1px white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header h2 {
+  font-size: 2rem;
 }
 
 .sentence {

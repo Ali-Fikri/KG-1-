@@ -64,8 +64,8 @@ document.querySelectorAll(".img-item").forEach((img) => {
       svg.appendChild(line);
 
       setTimeout(() => {
-        // animate the line
-        line.style.strokeDasharray = "0";
+        line.style.transition = "stroke-dashoffset 2s linear";
+        line.style.strokeDashoffset = "0"; // Reveal the line
       }, 2000);
     } else {
       playIncorrectSound();
