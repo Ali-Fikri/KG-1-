@@ -2,76 +2,49 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Écoute et Communique</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Mes lettres de l'alphabet</title>
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../../../master.css" />
   </head>
-  <body>
+  <body style="text-align: center">
     <div class="page">
-      <header>
-        <h1
-          class="unite-title title"
-          data-type="file"
-          data-audio="../../../../sounds/unite1.mp3"
-          style="margin-bottom: 2.5rem">
-          <span class="unite-subtitle"
-            ><span style="color: #df5b2c">1</span> <br />Unité</span
-          >Écoute et Communique
-        </h1>
-      </header>
-
-      <div class="letters-container">
-        <section class="section">
-          <h2
-            class="title script-title"
-            data-type="tts"
-            data-text="J’écoute et je montre l’imÂge"
-            style="margin-bottom: 40px">
-            SALUER
-          </h2>
-
-          <div class="images-container">
-            <img
-              src="imgs/girl.png"
-              alt="Person Image"
-              data-type="file"
-              data-audio="sounds/18.mp3"
-              style="margin-top: 8rem" />
-            <img
-              src="imgs/dinasour.png"
-              alt="Person Image"
-              data-type="file"
-              data-audio="sounds/17.mp3" />
-          </div>
-        </section>
-      </div>
+      <section class="board">
+        <header>
+          <h1 data-type="tts" data-text="Écoute et Communique">
+            Écoute et Communique
+          </h1>
+          <h2 data-type="tts" data-text="les chiffres.">Les chiffres.</h2>
+        </header>
+        <div class="images-container">
+          <img
+            src="imgs/1.png"
+            alt="Person Image"
+            data-type="file"
+            data-audio="sounds/19.mp3"
+            class="first-image" />
+          <img
+            src="imgs/2.png"
+            alt="Person Image"
+            data-type="file"
+            data-audio="sounds/18.mp3"
+            class="second-image" />
+        </div>
+      </section>
 
       <footer>
         <div class="navigation">
-          <a href="../page22/index.html" class="button-container">
-            <button class="brutalist-button openai button-1">
-              <div class="openai-logo">
-                <img src="../../../imgs/previous.png" alt="Previous" />
-              </div>
-              <div class="button-text">
-                <span>Accueil</span>
-              </div>
-            </button>
+          <a href="../page22/index.html" class="button">
+            <img src="../../../imgs/previous.png" alt="Previous" />
           </a>
 
           <a href="../../../index.html" class="home-btn">
             <img src="../../../imgs/home.png" width="130" alt="Home" />
           </a>
 
-          <a href="../page29/index.html" class="button-container">
-            <button class="brutalist-button openai button-1">
-              <div class="openai-logo">
-                <img src="../../../imgs/next.png" alt="next" />
-              </div>
-              <div class="button-text">
-                <span>Page suivante</span>
-              </div>
-            </button>
+          <a href="../page29/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../../imgs/next.png" alt="next" />
+            </div>
           </a>
         </div>
       </footer>

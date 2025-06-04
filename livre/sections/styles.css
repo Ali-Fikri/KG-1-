@@ -10,15 +10,15 @@ body {
 
 .board {
   width: 60%;
-  height: 60%;
   margin: 10rem auto 1.5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-top: 4rem;
   position: relative;
   font-size: 1.5vw; /* Add this to scale text inside the board */
-  padding: 4rem 6rem;
+  padding: 4rem;
   border: 0.625rem solid #df5b2c;
   border-radius: 2rem;
   background-color: white;
@@ -34,9 +34,8 @@ body {
 .title {
   color: red;
   font-size: 3rem;
-  padding-top: 30px;
   text-shadow: 2px 2px white;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .book-sections {
@@ -46,7 +45,7 @@ body {
   flex-direction: column;
   margin-top: 2rem;
   font-size: 1.5em; /* Now relative to .board */
-  gap: 3rem 3rem;
+  gap: 1.5rem 3rem;
 }
 
 .book-section {

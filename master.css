@@ -295,15 +295,6 @@ body::after {
     justify-content: space-evenly;
   }
 
-  .images-container {
-    flex-direction: column;
-    gap: 5rem;
-  }
-
-  .images-container img {
-    width: auto;
-  }
-
   .question {
     width: 100%;
     display: flex;

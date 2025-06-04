@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url("imgs/home-bg.jpg");
+  background: url("imgs/home-bg.png");
   background-size: contain;
   background-repeat: round;
   margin: 0;
@@ -110,27 +110,6 @@ audio {
   color: #ddd;
   margin-bottom: 20px;
 }
-
-/* زر البدء */
-/* .start-btn {
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  background: #ff9800;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
-} */
-
-/* تأثير Hover */
-/* .start-btn:hover {
-  background: #e68900;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(255, 152, 0, 0.6);
-} */
 
 /* تأثير Animation */
 @keyframes fadeIn {
@@ -316,10 +295,7 @@ audio {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
-  background: url(imgs/kids.png) no-repeat center center/ cover;
-  background-size: contain;
   margin-top: 10rem;
 }
 
