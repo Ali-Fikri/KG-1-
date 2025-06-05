@@ -295,7 +295,7 @@ body::after {
     justify-content: space-evenly;
   }
 
-  .question {
+  /* .question {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -305,7 +305,7 @@ body::after {
     font-size: 4rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.3s;
-  }
+  } */
 
   .sentence {
     width: 100%;

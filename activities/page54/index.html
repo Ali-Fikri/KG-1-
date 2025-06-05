@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mes défifis</title>
+    <link rel="stylesheet" href="../../master.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <section class="section">
+          <div class="choose">
+            <div class="question-header">
+              <img src="imgs/speaker.png" alt="speaker" /> Entoure les mots dans
+              lesquels tu vois la lettre <span>A-a-A-a</span> :-
+            </div>
+            <div class="question words">
+              <span class="word correct" data-type="tts" data-text="Alin"
+                >Alin</span
+              >
+              -
+              <span class="word correct" data-type="tts" data-text="arbre"
+                >arbre</span
+              >
+              -
+              <span class="word incorrect" data-type="tts" data-text="Escargot"
+                >Escargot</span
+              >
+              -
+              <span class="word incorrect" data-type="tts" data-text="bar"
+                >bar</span
+              >
+              -
+              <span class="word incorrect" data-type="tts" data-text="Rat"
+                >Rat</span
+              >
+              -
+              <span class="word incorrect" data-type="tts" data-text="Table"
+                >Table</span
+              >
+              -
+              <span class="word incorrect" data-type="tts" data-text="Robot"
+                >Robot</span
+              >
+            </div>
+            <img src="imgs/line.png" alt="line" class="line" />
+          </div>
+          <div class="associate">
+            <div class="question-header">
+              <img src="imgs/speaker.png" alt="speaker" /> Associe
+            </div>
+            <div class="letters-box">
+              <div class="letters" id="wordList">
+                <div
+                  class="letter"
+                  data-match="2"
+                  data-type="tts"
+                  data-text="bonjour">
+                  bonjour
+                  <span class="dot pink"></span>
+                </div>
+                <div
+                  class="letter"
+                  data-match="1"
+                  data-type="tts"
+                  data-text="bonsoir">
+                  bonsoir
+                  <span class="dot pink"></span>
+                </div>
+                <div
+                  class="letter"
+                  data-match="4"
+                  data-type="tts"
+                  data-text="salut">
+                  salut
+                  <span class="dot pink"></span>
+                </div>
+                <div
+                  class="letter"
+                  data-match="3"
+                  data-type="tts"
+                  data-text="au revoir">
+                  au revoir
+                  <span class="dot pink"></span>
+                </div>
+              </div>
+
+              <svg id="svg">
+                <defs>
+                  <marker
+                    id="arrow"
+                    markerWidth="10"
+                    markerHeight="10"
+                    refX="6"
+                    refY="3"
+                    orient="auto">
+                    <path d="M0,0 L0,6 L9,3 z" fill="currentColor" />
+                  </marker>
+                </defs>
+              </svg>
+
+              <div class="images" id="imageList">
+                <div class="image">
+                  <span class="dot cyan"></span>
+                  <img class="img-item" src="imgs/2.png" data-id="1" />
+                </div>
+                <div class="image">
+                  <span class="dot cyan"></span>
+                  <img class="img-item" src="imgs/3.png" data-id="2" />
+                </div>
+                <div class="image">
+                  <span class="dot cyan"></span>
+                  <img class="img-item" src="imgs/4.png" data-id="3" />
+                </div>
+                <div class="image">
+                  <span class="dot cyan"></span>
+                  <img class="img-item" src="imgs/5.png" data-id="4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div class="navigation">
+          <a href="../page46/index.html" class="button">
+            <img src="../../imgs/previous.png" alt="Previous" />
+          </a>
+
+          <a href="../../index.html" class="home-btn">
+            <img src="../../imgs/home.png" width="130" alt="Home" />
+          </a>
+
+          <a href="../page59/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../imgs/next.png" alt="next" />
+            </div>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <span class="audio">
+      <audio id="clapSound" src="../../sounds/clap.mp3" preload="auto"></audio>
+      <audio
+        id="inCorrectSound"
+        src="../../sounds/incorrect.mp3"
+        preload="auto"></audio>
+    </span>
+    <script src="script.js"></script>
+    <script src="../../master.js"></script>
+  </body>
+</html>
