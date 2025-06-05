@@ -19,17 +19,36 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 2rem;
   margin-top: 0;
   font-size: 2rem;
+}
+
+.question-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .board .section .question-header {
   display: flex;
   align-items: center;
   justify-content: start;
+  gap: 2rem;
   width: 100%;
   padding: 0.5rem 0;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: rgba(167, 221, 60, 1);
+  text-shadow: 2px 0px 0px rgba(128, 0, 64, 1), 3px 2px 0px rgba(77, 0, 38, 0.5),
+    3px 0px 3px rgba(255, 0, 43, 1), 5px 0px 3px rgba(128, 0, 21, 1),
+    6px 2px 3px rgba(77, 0, 13, 0.5), 6px 0px 9px rgba(255, 85, 0, 1),
+    8px 0px 9px rgba(128, 42, 0, 1), 9px 2px 9px rgba(77, 25, 0, 0.5),
+    9px 0px 18px rgba(255, 213, 0, 1), 11px 0px 18px rgba(128, 106, 0, 1),
+    12px 2px 18px rgba(77, 66, 0, 0.5), 12px 0px 30px rgba(212, 255, 0, 1),
+    14px 0px 30px rgba(106, 128, 0, 1), 15px 2px 30px rgba(64, 77, 0, 0.5),
+    15px 0px 45px rgba(128, 255, 0, 1), 17px 0px 45px rgba(64, 128, 0, 1),
+    17px 2px 45px rgba(38, 77, 0, 0.5);
 }
 
 .board .section .question-header img {
@@ -40,42 +59,57 @@
 
 .board .section .question-header span {
   color: #ec008d;
+  margin-left: 10px;
 }
 
-.board .question .word {
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 1rem 0.3rem;
-  border-radius: 0.5rem;
-  margin: 1rem;
-  cursor: pointer;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-}
-
-.board .question {
+.question-container .choices {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.letter img {
-  max-width: 12rem;
-  min-width: 6rem;
+.question-container .choices .choice {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.selected-letter {
-  box-shadow: #e089b0 -4px 9px 25px -6px;
+.question-container .choices .choice img {
+  width: 8rem;
+  height: 6rem;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
 
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
+.question-container .choices .choice.item-img img {
+  width: 100%;
+  height: 8rem;
+}
+
+.question-container .choices .correct {
+  box-shadow: 0px 0px 20px 16px rgba(31, 213, 91, 0.3);
+}
+.question-container .choices .incorrect {
+  box-shadow: 0px 0px 20px 16px rgba(215, 31, 31, 0.3);
 }
 
 /* Handle screens */
-@media (min-width: 1700px) {
+
+@media (min-width: 1800px) {
+  .page {
+    min-width: 75% !important;
+  }
+
+  .board {
+    padding: 6rem 8rem;
+  }
+
   .board .associate .word {
     font-size: 2.5rem;
     padding: 2rem;
@@ -85,32 +119,38 @@
   }
 }
 
-@media (max-width: 1700px) {
+@media (min-width: 2000px) {
+  .page {
+    min-width: 60% !important;
+  }
+}
+
+@media (max-width: 1800px) {
+  .page {
+    min-width: 90% !important;
+  }
+}
+@media (max-width: 1400px) {
+  .board {
+    padding: 4rem 4rem;
+    aspect-ratio: 4 / 5;
+    /* background-size: contain; */
+  }
+  .board .title {
+    font-size: 2rem;
+  }
   .board .section {
     gap: 1rem;
   }
   .board .section .question-header {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .board .section .question-header img {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
   }
-  .board .question .word {
-    font-size: 1.5rem;
-    padding: 0.5rem 0.3rem;
-    margin: 0.5rem;
-  }
-}
-
-@media (max-width: 990px) {
-  .letters-box .letters {
-    gap: 2rem;
-  }
-
-  .letters-box .letter {
-    gap: 0.5rem;
-    padding: 0.5rem 0;
-    font-size: 2rem;
+  .board .choices .choice img {
+    width: 8rem;
+    height: 8rem;
   }
 }
