@@ -1,0 +1,243 @@
+.page {
+  min-width: 70% !important;
+}
+
+.board {
+  position: relative;
+  width: 100%;
+  padding: 6rem 6rem;
+  margin-bottom: 2.5rem;
+  border: 0.625rem solid #df5b2c;
+  background: url(../../imgs/board-layout.png) no-repeat center center;
+  background-size: cover;
+  background-color: white;
+  border-radius: 2rem;
+  aspect-ratio: 5 / 4;
+  max-width: 90%;
+}
+
+.board .section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.question-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board .section .question-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+  color: rgba(167, 221, 60, 1);
+  text-shadow: 2px 0px 0px rgba(128, 0, 64, 1), 3px 2px 0px rgba(77, 0, 38, 0.5),
+    3px 0px 3px rgba(255, 0, 43, 1), 5px 0px 3px rgba(128, 0, 21, 1),
+    6px 2px 3px rgba(77, 0, 13, 0.5), 6px 0px 9px rgba(255, 85, 0, 1),
+    8px 0px 9px rgba(128, 42, 0, 1), 9px 2px 9px rgba(77, 25, 0, 0.5),
+    9px 0px 18px rgba(255, 213, 0, 1), 11px 0px 18px rgba(128, 106, 0, 1),
+    12px 2px 18px rgba(77, 66, 0, 0.5), 12px 0px 30px rgba(212, 255, 0, 1),
+    14px 0px 30px rgba(106, 128, 0, 1), 15px 2px 30px rgba(64, 77, 0, 0.5),
+    15px 0px 45px rgba(128, 255, 0, 1), 17px 0px 45px rgba(64, 128, 0, 1),
+    17px 2px 45px rgba(38, 77, 0, 0.5);
+}
+
+.board .section .question-header img {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1rem;
+}
+
+.board .section .question-header span {
+  color: #ec008d;
+}
+
+#boy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10rem;
+  height: auto;
+}
+
+.images-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  cursor: pointer;
+  z-index: 1;
+}
+
+#first-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: auto;
+}
+
+#second-image {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  width: 10rem;
+  height: auto;
+}
+#third-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10rem;
+  height: auto;
+}
+#fourth-image {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 10rem;
+  height: auto;
+}
+#v-letter {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 10rem;
+  height: auto;
+  z-index: 1;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+}
+#sixth-image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10rem;
+  height: auto;
+}
+#seventh-image {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 10rem;
+  height: auto;
+}
+#eighth-image {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 10rem;
+  height: auto;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+svg line {
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.shake {
+  animation: shake 1s;
+  -webkit-animation: shake 1s;
+}
+
+.line-animation {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 2s linear forwards;
+  -webkit-animation: draw 2s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Handle screens */
+
+@media (min-width: 1800px) {
+  .page {
+    min-width: 75% !important;
+  }
+
+  .board {
+    padding: 6rem 8rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .page {
+    min-width: 60% !important;
+  }
+}
+
+@media (max-width: 1800px) {
+  .page {
+    min-width: 90% !important;
+  }
+}
+@media (max-width: 1400px) {
+  .board {
+    padding: 4rem 4rem;
+    aspect-ratio: 4 / 5;
+    /* background-size: contain; */
+  }
+
+  .board .section {
+    gap: 1rem;
+  }
+  .board .section .question-header {
+    font-size: 2rem;
+  }
+  .board .section .question-header img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
