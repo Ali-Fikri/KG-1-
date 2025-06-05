@@ -55,42 +55,8 @@
   -o-border-radius: 0.5rem;
 }
 
-.board .question .word.correct.active {
-  color: white;
-  background-color: #12b886;
-}
-
-.board .section .line {
-  width: 90%;
-  height: 1rem;
-}
-
-.board .question,
-.associate {
+.board .question {
   width: 100%;
-}
-
-.letters-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  position: relative;
-  width: 90%;
-}
-
-.letters-box .letters,
-.images {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.letters-box .letters {
-  gap: 4rem;
-  justify-content: space-between;
-  margin-top: 20px;
 }
 
 .letter img {
@@ -98,124 +64,8 @@
   min-width: 6rem;
 }
 
-.dot {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  display: inline-block;
-  z-index: 1000;
-}
-
-.dot.cyan {
-  background-color: #00adee;
-}
-
-.letters-box .selected-letter {
-  padding: 10px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-
 .selected-letter {
   box-shadow: #e089b0 -4px 9px 25px -6px;
-}
-
-.images .image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.img-item {
-  max-width: 11rem;
-  padding: 0.3rem;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
-
-svg line {
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-}
-
-/* Shake animation */
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-}
-
-.shake {
-  color: crimson;
-  animation: shake 1s;
-  -webkit-animation: shake 1s;
-}
-
-.script-title,
-.cursive-title {
-  background: url("../../../../imgs/yellow-brush.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 2rem;
-  text-align: start;
-  font-family: Arial, Helvetica, sans-serif !important;
-}
-
-.script-letter {
-  font-size: 52px;
-  font-weight: 100;
-}
-
-.color-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0 10px;
-  border: none;
-  cursor: pointer;
-}
-
-/* #drawing-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  pointer-events: auto;
-} */
-
-.line-animation {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: draw 2s linear forwards;
-  -webkit-animation: draw 2s linear forwards;
 }
 
 @keyframes draw {
@@ -224,6 +74,7 @@ svg line {
   }
 }
 
+/* Handle screens */
 @media (min-width: 1700px) {
   .board .associate .word {
     font-size: 2.5rem;

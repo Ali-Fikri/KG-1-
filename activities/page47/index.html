@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mes défifis</title>
+    <link rel="stylesheet" href="../../master.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="board">
+        <h2
+          class="title script-title"
+          data-type="tts"
+          data-text="J’entends puis j’entoure">
+          J’entends puis j’entoure
+        </h2>
+        <section class="section">
+          <div class="question-container">
+            <div class="question-header">
+              <img src="imgs/speaker.png" alt="speaker" /> J’entends le son de
+              la lettre <span>m</span>
+            </div>
+            <div class="choices">
+              <div class="choice" data-answer="correct">
+                <img src="imgs/1.png" alt="1" />
+              </div>
+              <div class="choice" data-answer="incorrect">
+                <img src="imgs/2.png" alt="2" />
+              </div>
+              <div class="choice" data-answer="incorrect">
+                <img src="imgs/3.png" alt="3" />
+              </div>
+              <div class="choice" data-answer="incorrect">
+                <img src="imgs/4.png" alt="4" />
+              </div>
+            </div>
+          </div>
+          <div class="question-container">
+            <div class="question-header">
+              <img src="imgs/speaker.png" alt="speaker" /> J’entends le son de
+              la lettre <span>k</span>
+            </div>
+            <div class="choices">
+              <div class="choice" data-answer="correct">
+                <img src="imgs/a.png" alt="kangaroo" />
+              </div>
+              <div class="choice" data-answer="incorrect">
+                <img src="imgs/b.png" alt="monkey" />
+              </div>
+              <div class="choice" data-answer="incorrect">
+                <img src="imgs/c.png" alt="juice" />
+              </div>
+              <div class="choice" data-answer="incorrect">
+                <img src="imgs/d.png" alt="kiui" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div class="navigation">
+          <a href="../page46/index.html" class="button">
+            <img src="../../imgs/previous.png" alt="Previous" />
+          </a>
+
+          <a href="../../index.html" class="home-btn">
+            <img src="../../imgs/home.png" width="130" alt="Home" />
+          </a>
+
+          <a href="../page54/index.html" class="button">
+            <div class="openai-logo">
+              <img src="../../imgs/next.png" alt="next" />
+            </div>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <span class="audio">
+      <audio id="clapSound" src="../../sounds/clap.mp3" preload="auto"></audio>
+      <audio
+        id="inCorrectSound"
+        src="../../sounds/incorrect.mp3"
+        preload="auto"></audio>
+    </span>
+    <script src="script.js"></script>
+    <script src="../../master.js"></script>
+  </body>
+</html>
