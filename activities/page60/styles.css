@@ -38,23 +38,23 @@
   gap: 2rem;
   width: 100%;
   padding: 0.5rem 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgba(167, 221, 60, 1);
-  text-shadow: 2px 0px 0px rgba(128, 0, 64, 1), 3px 2px 0px rgba(77, 0, 38, 0.5),
-    3px 0px 3px rgba(255, 0, 43, 1), 5px 0px 3px rgba(128, 0, 21, 1),
-    6px 2px 3px rgba(77, 0, 13, 0.5), 6px 0px 9px rgba(255, 85, 0, 1),
-    8px 0px 9px rgba(128, 42, 0, 1), 9px 2px 9px rgba(77, 25, 0, 0.5),
-    9px 0px 18px rgba(255, 213, 0, 1), 11px 0px 18px rgba(128, 106, 0, 1),
-    12px 2px 18px rgba(77, 66, 0, 0.5), 12px 0px 30px rgba(212, 255, 0, 1),
-    14px 0px 30px rgba(106, 128, 0, 1), 15px 2px 30px rgba(64, 77, 0, 0.5),
-    15px 0px 45px rgba(128, 255, 0, 1), 17px 0px 45px rgba(64, 128, 0, 1),
+  text-shadow: 2px 0 0 rgba(128, 0, 64, 1), 3px 2px 0 rgba(77, 0, 38, 0.5),
+    3px 0 3px rgba(255, 0, 43, 1), 5px 0 3px rgba(128, 0, 21, 1),
+    6px 2px 3px rgba(77, 0, 13, 0.5), 6px 0 9px rgba(255, 85, 0, 1),
+    8px 0 9px rgba(128, 42, 0, 1), 9px 2px 9px rgba(77, 25, 0, 0.5),
+    9px 0 18px rgba(255, 213, 0, 1), 11px 0 18px rgba(128, 106, 0, 1),
+    12px 2px 18px rgba(77, 66, 0, 0.5), 12px 0 30px rgba(212, 255, 0, 1),
+    14px 0 30px rgba(106, 128, 0, 1), 15px 2px 30px rgba(64, 77, 0, 0.5),
+    15px 0 45px rgba(128, 255, 0, 1), 17px 0 45px rgba(64, 128, 0, 1),
     17px 2px 45px rgba(38, 77, 0, 0.5);
 }
 
 .board .section .question-header img {
-  width: 6rem;
-  height: 6rem;
-  margin-right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 1rem;
 }
 
 .board .section .question-header span {
@@ -84,8 +84,8 @@
 }
 
 .question-container .choices .choice img {
-  width: 7rem;
-  height: 5rem;
+  width: 6rem;
+  height: 4rem;
   padding: 0.5rem;
   font-size: 2.5rem;
   border-radius: 1rem;
@@ -94,13 +94,13 @@
 }
 
 .question-container .choices .choice .image-choice {
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 .question-container .choices .choice .true-false {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .question-container .choices .choice.item-img img {
@@ -109,17 +109,23 @@
 }
 
 .question-container .choices .correct {
-  box-shadow: 0px 0px 20px 16px rgba(31, 213, 91, 0.3);
+  box-shadow: 0 0 20px 16px rgba(31, 213, 91, 0.3);
 }
 .question-container .choices .incorrect {
-  box-shadow: 0px 0px 20px 16px rgba(215, 31, 31, 0.3);
+  box-shadow: 0 0 20px 16px rgba(215, 31, 31, 0.3);
 }
 
 /* Handle screens */
 
-@media (min-width: 1800px) {
+@media (min-width: 2200px) {
   .page {
-    min-width: 75% !important;
+    min-width: 55% !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page {
+    min-width: 70% !important;
   }
 
   .board {
@@ -127,15 +133,9 @@
   }
 }
 
-@media (min-width: 2200px) {
+@media (max-width: 1600px) {
   .page {
-    min-width: 60% !important;
-  }
-}
-
-@media (max-width: 1800px) {
-  .page {
-    min-width: 90% !important;
+    min-width: 85% !important;
   }
 }
 @media (max-width: 1400px) {
@@ -153,10 +153,7 @@
   .board .section .question-header {
     font-size: 2rem;
   }
-  .board .section .question-header img {
-    width: 4rem;
-    height: 4rem;
-  }
+
   .board .choices .choice img {
     width: 8rem;
     height: 8rem;

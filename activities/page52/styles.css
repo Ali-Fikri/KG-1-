@@ -202,7 +202,13 @@ svg line {
 
 /* Handle screens */
 
-@media (min-width: 1800px) {
+@media (min-width: 2000px) {
+  .page {
+    min-width: 60% !important;
+  }
+}
+
+@media (min-width: 1600px) {
   .page {
     min-width: 75% !important;
   }
@@ -212,13 +218,7 @@ svg line {
   }
 }
 
-@media (min-width: 2000px) {
-  .page {
-    min-width: 60% !important;
-  }
-}
-
-@media (max-width: 1800px) {
+@media (max-width: 1600px) {
   .page {
     min-width: 90% !important;
   }
